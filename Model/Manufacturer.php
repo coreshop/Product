@@ -20,7 +20,7 @@ class Manufacturer extends AbstractPimcoreModel implements ManufacturerInterface
     /**
      * {@inheritdoc}
      */
-    public function getName($language = null)
+    public function getName()
     {
         throw new ImplementedByPimcoreException(__CLASS__, __METHOD__);
     }
@@ -28,7 +28,7 @@ class Manufacturer extends AbstractPimcoreModel implements ManufacturerInterface
     /**
      * {@inheritdoc}
      */
-    public function setName($name, $language = null)
+    public function setName($name)
     {
         throw new ImplementedByPimcoreException(__CLASS__, __METHOD__);
     }
