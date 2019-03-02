@@ -14,6 +14,6 @@ namespace CoreShop\Component\Product\Repository;
 
 use CoreShop\Component\Resource\Repository\RepositoryInterface;
 
-interface ProductAdditionalUnitRepositoryInterface extends RepositoryInterface
+interface ProductUnitDefinitionRepositoryInterface extends RepositoryInterface
 {
 }
