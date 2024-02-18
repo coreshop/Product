@@ -16,15 +16,9 @@ declare(strict_types=1);
  *
  */
 
-namespace CoreShop\Component\Product\Calculator;
+namespace CoreShop\Component\Product\Rule\Action;
 
-use CoreShop\Component\Product\Model\ProductInterface;
-
-interface ProductPriceCalculatorInterface extends
-    ProductRetailPriceCalculatorInterface,
-    ProductDiscountPriceCalculatorInterface,
-    ProductDiscountCalculatorInterface,
-    ProductCustomAttributesCalculatorInterface
+interface ProductCustomAttributesActionProcessorInterface extends ActionProcessorInterface
 {
-    public function getPrice(ProductInterface $product, array $context, bool $withDiscount = true): int;
+    public function getCustomAttributes($subject, array $context, array $configuration): array;
 }
